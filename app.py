@@ -42,7 +42,6 @@ async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 status = 'Expired'
                 validity = 'Expired'
                 key = row['key']
-                settings.delete(key, header)
 
             else:
                 status = 'Active'
